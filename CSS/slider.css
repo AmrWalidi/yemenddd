@@ -17,7 +17,7 @@
      line-height: 3;
      color: white;
      width: 30%;
-     position: relative;
+     height: fit-content;
 }
 
 .slider-background p::after{
@@ -72,10 +72,16 @@ background-color: white;
 
     .slider-background p{
         margin-right: 5px;
-        position: relative;
         top: 0;
-         width: 100%;
+        width: 100%;
     }
+
+    .slider-background p::after{
+        position:relative;
+        }
+        .slider-background p::before{
+            position:relative;
+            }
 
     .carousel{
         padding-top: 10px;

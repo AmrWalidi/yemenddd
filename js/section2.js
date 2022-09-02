@@ -1,4 +1,3 @@
-
   $(document).ready(function() {
     $(window).resize();
     
@@ -35,7 +34,7 @@ $(window).resize(function() {
     }
 
     else if($(this).width() <= 700){
-      $(".section2-icons-2").click(function () {
+        $(".section2-icons-2").click(function () {
         $(".section2-icons-2").css({"color":"rgb(61, 69, 212)", "transition":"0.3s"});
         $(".section2-icons-1").css("color","#333");
         $(".section2-icons-3").css("color","#333");

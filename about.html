@@ -43,9 +43,10 @@
         alt="yemendd image"
       />
       <nav>
-        <img class="icon" src="images/nav icon.png" />
+        <img class="icon" onclick="toggleMenu()" src="images/nav icon.png" />
         <ul class="navigation" id="navigation">
           <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="about.html">من نحن</a></li>
           <li><a href="">الأخبار ولأنشطة</a></li>
           <li id="dropdown1">
             <a class="dropdown">مجالات العمل <span>&#812;</span></a>
@@ -71,6 +72,18 @@
           <li><a href="">تواصل معنا</a></li>
         </ul>
       </nav>
+      <script>
+        var menulist = document.getElementById("navigation");
+        menulist.style.height = "0px";
+
+        function toggleMenu() {
+          if (menulist.style.height == "0px") {
+            menulist.style.height = "305px";
+          } else {
+            menulist.style.height = "0px";
+          }
+        }
+      </script>
     </header>
     <div class="about">
       <img src="images/about_image.png" alt="" />
