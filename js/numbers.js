@@ -27,3 +27,5 @@ let section = document.querySelector(".news");
           }
         };
 
+        
+

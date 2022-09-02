@@ -1,6 +1,6 @@
 footer{
     position:relative;
-    top: 600px;
+    top: 700px;
     width: 100%;
     height: fit-content;
     padding-bottom: 10px ;
@@ -60,7 +60,7 @@ footer ul li.social ul li{
     padding-left: 10px;
 }
 
-footer .fa{
+footer .bi{
     text-align: center;
   text-decoration: none;
   color: #fff;
@@ -71,7 +71,7 @@ footer .fa{
   text-shadow: 1px 1px black;
 }
 
-footer .fa:hover{
+footer .bi:hover{
     text-decoration: none;
     color: white;
 }
