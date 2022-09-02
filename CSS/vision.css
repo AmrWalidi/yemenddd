@@ -1,0 +1,44 @@
+.vision{
+    padding: 50px 20px ;
+    }
+    
+    .vision .bi-eye{
+        padding-right: 20px;
+        font-size: 50px;
+    }
+    
+    .vision h1{
+        font-family: 'El Messiri', sans-serif;
+        font-weight: bold;
+        width: fit-content;
+        border-bottom: 2px solid rgb(31, 31, 31);
+    }
+    
+    .vision p{
+        padding-top: 10px;
+        font-size: 23px;
+        font-family:'Cairo', sans-serif;
+    }
+
+    .vision-footer{
+        position: absolute;
+        bottom: 0;
+    }
+
+    @media only screen and (max-height:700px){
+        .vision{
+            padding-bottom: 100px;
+            }
+            
+            .vision p{
+                padding-top: 10px;
+                font-size: 23px;
+                font-family:'Cairo', sans-serif;
+            }
+
+
+        .vision-footer{
+            position: relative;
+            height: fit-content;
+        }
+    } 

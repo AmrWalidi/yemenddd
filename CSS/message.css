@@ -1,0 +1,44 @@
+.message-paragraph{
+padding: 50px 20px ;
+height: fit-content;
+}
+
+.message-paragraph .bi-envelope-paper{
+    font-size: 50px;
+}
+
+.message-paragraph h1{
+    font-family: 'El Messiri', sans-serif;
+    font-weight: bold;
+    width: fit-content;
+    border-bottom: 2px solid rgb(31, 31, 31);
+}
+
+.message-paragraph p{
+    padding-top: 10px;
+    font-size: 23px;
+    font-family:'Cairo', sans-serif;
+}
+
+.message-footer{
+    position: absolute;
+    bottom: 0;
+}
+
+@media only screen and (max-width:700px){
+    .message-paragraph{
+        width: 100%;
+        text-align:justify;
+        padding-bottom:80px ;
+        }
+        
+        .message-paragraph .bi-envelope-paper{
+            font-size: 50px;
+        }
+
+        .message-footer{
+            position: relative;
+            height: fit-content;
+        }
+        
+}

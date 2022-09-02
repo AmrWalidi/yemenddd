@@ -1,0 +1,39 @@
+.values{
+    padding: 50px 20px 100px;
+    }
+    
+    .values .bi-star{
+        padding-right: 10px;
+        font-size: 30px;
+    }
+    
+    .values h1{
+        font-family: 'El Messiri', sans-serif;
+        font-weight: bold;
+        width: fit-content;
+        border-bottom: 2px solid rgb(31, 31, 31);
+    }
+
+    .values ul{
+        padding-bottom: 10px;
+    }
+
+    .values ul li{
+        padding: 10px 0;
+        font-size: 25px;
+        font-family: "Baloo Bhaijaan 2";
+    }
+
+    .values-footer{
+        position: absolute;
+        bottom: 0;
+    }
+
+    @media only screen and (max-height:700px){
+        
+        .values-footer{
+            position: relative;
+            height: fit-content;
+        }
+    } 
+    

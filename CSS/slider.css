@@ -1,0 +1,139 @@
+
+.slider-background{
+    margin: 10px 0px;
+    width:100%;
+    height: 500px;
+    background: linear-gradient(to bottom right, #03496c,#489ecf);
+    box-shadow: 2px 0 10px rgb(88, 88, 88);
+}
+.btn-group{
+  list-style: none;
+  margin-top: 70px;
+}
+
+.menu-icon{
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    position: relative;
+    bottom: 14px;
+    right: 37px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 34px;
+    box-shadow: 1px 1px 10px rgb(33, 33, 33);
+}
+
+.menu-icon .glyphicon-globe{
+    font-size: 35px;
+    margin: 10px 8px;
+}
+
+.menu-icon .glyphicon-envelope{
+    font-size: 25px;
+    margin: 12px 14px;
+}
+
+.menu-icon .glyphicon-eye-open{
+    font-size: 27px;
+    margin: 13px 14px;
+}
+
+.menu-icon .glyphicon-star-empty{
+    font-size: 16px;
+    margin: 17px 1px ;
+}
+
+.btn-group li{
+    margin-top: 20px;
+}
+
+.btn-group li button{
+    text-align: right;
+    width: 15vw;
+    font-size: 2vw;
+    padding-right: 50px;
+    border:0 transparent;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-group li button:hover{
+    background-color:rgb(211, 194, 5) ;
+    color: white;
+}
+
+.carousel{
+    width: fit-content;
+    bottom: 370px;
+    right: 300px;
+    z-index: 3;
+    border: 2px solid white;
+    box-shadow: 2px 0 10px rgb(88, 88, 88);
+}
+
+    .carousel-control.right {
+        right: 0px;
+        left: auto;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0) 100%); 
+        background-repeat: repeat-x;
+    }
+
+
+.carousel-inner .item img{
+    width: 55vw;
+    max-width: 100%;
+}
+
+@media only screen and (max-width:700px){
+
+    .slider-background{
+        margin-top: 0;
+        width:100%;
+        height:fit-content;
+        padding-bottom: 10px;
+    }
+
+    .btn-group{
+        padding:0 0;
+        margin:0 0 5px;
+        width: 100%;
+        border-top: 1px solid black ;
+    }
+
+   .menu-icon{
+        display: none;
+    } 
+
+
+    .btn-group li{
+        padding-top: 2px;
+        margin-top: 0;
+    }
+
+    .btn-group li a{
+        text-decoration: none;
+    }
+
+    .btn-group li button{
+        color: rgb(28, 100, 255);
+        display: block;
+        width: 100%;
+        text-align: right;
+        padding: 5px 10px;
+        border-bottom:1px solid black;
+        border-radius: 0;
+        font-size: 23px;
+        font-weight:900;
+    }
+
+    .carousel{
+        padding-top: 10px;
+        bottom: 0;
+        right: 0;
+    }
+
+    .carousel-inner .item img{
+        width: 100%;
+        max-width: 100%;
+    }
+}

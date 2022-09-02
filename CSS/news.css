@@ -1,0 +1,54 @@
+.news{
+    position: relative;
+    top:200px;
+}
+
+.news h2{
+    width: fit-content;
+    font-weight: bold;
+    font-size: 2vw;
+    font-family:'El Messiri', sans-serif;
+    margin: 0 10px;
+    padding:0 0 5px 10px;
+    border-bottom: 2px solid black;
+}
+
+.owl-carousel {
+    padding: 10px 10px;
+    direction: ltr;
+}
+.owl-carousel img{
+    cursor: pointer;
+     width: 20vw;
+     border: 2px solid black;
+}
+
+.owl-carousel img:active{
+    cursor: grabbing;
+}
+
+.owl-carousel .item p{
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+@media only screen and (max-width:700px){
+    .news{
+        position: relative;
+        top:0;
+        margin-top: 80px;
+    }
+
+    .news h2{
+        font-size: 25px;
+        font-weight: bold;
+        border-bottom: 0;
+        width:100%;
+        text-align: center;
+    }
+}
+
+

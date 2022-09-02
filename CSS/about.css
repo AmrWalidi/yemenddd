@@ -1,0 +1,46 @@
+.about{
+    background-color: #fcfafa;
+    padding: 0 0 40px;
+}
+
+.about img{
+  margin-top: 20px;
+}
+
+.about-paragraph{ 
+    width: 90%;
+    text-align:justify;
+    padding: 5px 277px 0 0;
+    font-size: 20px;
+    font-family: 'El Messiri', sans-serif;
+}
+
+.about-paragraph p{
+    padding-top: 10px ;
+    font-family:'Cairo', sans-serif;
+    line-height: 1.6;
+}
+
+@media only screen and (max-width:700px){
+     .about-paragraph{ 
+        width: 100%;
+        text-align:justify;
+        padding: 5px 10px;
+        font-size: 20px;
+        font-family: 'El Messiri', sans-serif;
+    }
+
+    .about-paragraph h1{
+        text-align: center;
+    }
+
+    .about-paragraph h2{
+        text-align: center;
+    }
+        
+    
+    .about-paragraph p{
+        font-family:'Cairo', sans-serif;
+    }
+}
+

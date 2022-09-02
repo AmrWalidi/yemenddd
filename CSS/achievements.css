@@ -1,0 +1,104 @@
+.achievements{
+    position: relative;
+    top: 300px;
+}
+
+.achievements h2{
+    width: fit-content;
+    font-weight: bold;
+    font-size: 2vw;
+    font-family:'El Messiri', sans-serif;
+    margin: 0 10px;
+    padding:0 0 5px 10px;
+    border-bottom: 2px solid black;
+}
+
+.num-wrap{
+    margin-top: 10px;
+    direction: rtl;
+    height: 100%;
+    background-color: #0070A8;
+    border-top: 5px solid rgb(41, 41, 41);
+    border-bottom:5px solid rgb(41, 41, 41) ;
+}
+
+.nums{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.num_container{
+    color: white;
+    font-size: 20px;
+    margin-right: calc(100%/15);
+    margin-top: 35px;
+}
+
+.num_container .glyphicon{
+    font-size: 60px;
+}
+
+.num_container .num{
+    padding-top: 20px;
+}
+
+.num_container p{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.num::selection{
+    background-color: #02547d;
+}
+
+@media only screen and (max-width:700px){
+
+    .achievements{
+        position: relative;
+        top: 0;
+        
+    }
+    
+    .achievements h2{
+        width: fit-content;
+        font-weight: bold;
+        font-size: 25px;
+        font-family:'El Messiri', sans-serif;
+        text-align: center;
+        margin-top: 80px;
+        border-bottom: 0;
+        width:100%;
+    }
+
+    .num-wrap{
+        width: 100%;
+        
+    }
+
+
+    .nums{
+        text-align: center;
+    }
+
+
+    .num_container{
+        
+        color: white;
+        font-size: 20px;
+        margin-right: calc(100%/8);
+        margin-top: 35px;
+    }
+    
+    .num_container .glyphicon{
+        font-size: 40px;
+    }
+
+    .num_container p{
+        font-size: 15px;
+        font-family:'Noto Sans Arabic', sans-serif;
+        text-align: center;
+    }
+}
