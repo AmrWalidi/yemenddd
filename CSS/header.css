@@ -79,15 +79,15 @@ ul.menu{
     list-style: none;
     padding: 0;
     margin-top: 10px;
-    background-color: white;
     border: 1px solid rgb(147, 147, 147);
     box-shadow: 1px 1px 10px rgb(33, 33, 33);
     border-radius: 2px;
-    z-index: 100;
+    z-index: 5;
     position: absolute;
 }
 
 ul.menu li{
+    background-color: white;
     margin: 0;
     padding: 7px 4px;
     border-bottom:0.2px solid black ;
@@ -141,6 +141,16 @@ ul.menu li:hover > a{
         overflow: hidden;
         transition: 0.5s;
     }
+
+    #menu1{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    #menu2{
+        overflow: hidden;
+        transition: 0.5s;
+    }
     
     nav ul.navigation{
         display: block;
@@ -158,6 +168,7 @@ ul.menu li:hover > a{
     }
 
     nav .navigation li {
+        background-color: transparent;
         border-bottom: 1px solid black ;
         padding: 7px  5px;
     }
@@ -170,11 +181,12 @@ ul.menu li:hover > a{
     ul.menu {
         position:relative;
         text-align: right;
-        display: none;
+        display:none;
         background: linear-gradient(to right,#038fd6,#0070A8 );
         border-top:1px solid black;
         border: 0;
         box-shadow: 0 0 0;
+        height:0;
     }
 
     ul.menu li{
