@@ -44,7 +44,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="js/header.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/section2.js"></script>
 
@@ -65,19 +64,27 @@
           <li><a href="index.html">الرئيسية</a></li>
           <li><a href="about.html">من نحن</a></li>
           <li><a href="activities-news.html">الأخبار ولأنشطة</a></li>
-          <li id="dropdown1" onclick="subToggleMenu()">
-            <a class="dropdown">مجالات العمل <span>&#812;</span></a>
-            <ul class="menu" id="menu1">
-              <li><a href="">الأوقاف والإستثمار</a></li>
-              <li><a href="">الدراسات والبحوث</a></li>
-              <li><a href="">التدريب وبناء القدرات</a></li>
-              <li><a href="">التعليم</a></li>
-              <li><a href="">التمكين الإقتصادي</a></li>
-              <li><a href="">المبادرات المجتمعية</a></li>
-            </ul>
-          </li>
+          <div onmouseleave="fadeOut()" onmouseenter="fadeIn()">
+            <li id="dropdown1" onclick="subToggleMenu()">
+              <a class="dropdown">مجالات العمل <span>&#812;</span></a>
+              <ul class="menu" id="menu1">
+                <li><a href="">الأوقاف والإستثمار</a></li>
+                <li><a href="">الدراسات والبحوث</a></li>
+                <li><a href="">التدريب وبناء القدرات</a></li>
+                <li><a href="">التعليم</a></li>
+                <li><a href="">التمكين الإقتصادي</a></li>
+                <li><a href="">المبادرات المجتمعية</a></li>
+              </ul>
+            </li>
+          </div>
+
           <li><a href="">تقارير المشاريع</a></li>
-          <li id="dropdown2" onclick="subToggleMenu2()">
+          <li
+            id="dropdown2"
+            onclick="subToggleMenu2()"
+            onmouseleave="fadeOut2()"
+            onmouseenter="fadeIn2()"
+          >
             <a class="dropdown">المركز الإعلامي <span>&#812;</span></a>
             <ul class="menu" id="menu2">
               <li><a href="">معرض الصور</a></li>
@@ -103,6 +110,10 @@
             menulist.style.height = "307px";
           } else {
             menulist.style.height = "0px";
+            subMenulist.style.display = "none";
+            subMenulist.style.height = "0px";
+            subMenulist2.style.display = "none";
+            subMenulist2.style.height = "0px";
           }
         }
 
@@ -167,6 +178,32 @@
             menulist.style.height = "307px";
             subMenulist2.style.height = "0px";
             subMenulist2.style.display = "none";
+          }
+        }
+
+        var menu1 = document.getElementById("menu1");
+        menu1.style.opacity = "0";
+        var menu2 = document.getElementById("menu2");
+        menu2.style.opacity = "0";
+
+        function fadeIn() {
+          if (menu1.style.opacity == "0" && window.innerWidth > 700) {
+            menu1.style.opacity = "1";
+          }
+        }
+        function fadeOut() {
+          if (menu1.style.opacity == "1" && window.innerWidth > 700) {
+            menu1.style.opacity = "0";
+          }
+        }
+        function fadeIn2() {
+          if (menu2.style.opacity == "0" && window.innerWidth > 700) {
+            menu2.style.opacity = "1";
+          }
+        }
+        function fadeOut2() {
+          if (menu2.style.opacity == "1" && window.innerWidth > 700) {
+            menu2.style.opacity = "0";
           }
         }
       </script>

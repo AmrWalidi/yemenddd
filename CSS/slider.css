@@ -11,7 +11,7 @@
     margin-right: 20px;
     position: relative;
     top: 130px;
-     font-size: 30px;
+     font-size: 2vw;
      font-family: 'Gulzar', serif;
      text-align: center;
      line-height: 3;
@@ -40,9 +40,10 @@ background-color: white;
     }
  
 .carousel{
+    position: absolute!important;
     width: fit-content;
-    bottom: 170px;
-    right: 319px;
+    top: 140px;
+    left: 100px;
     z-index: 3;
     border: 2px solid white;
     box-shadow: 2px 0 10px rgb(88, 88, 88);
@@ -74,6 +75,7 @@ background-color: white;
         margin-right: 5px;
         top: 0;
         width: 100%;
+        font-size: 30px;
     }
 
     .slider-background p::after{
@@ -84,6 +86,9 @@ background-color: white;
             }
 
     .carousel{
+        position: relative!important;
+        top: 0;
+        left: 0;
         padding-top: 10px;
         bottom: 0;
         right: 0;

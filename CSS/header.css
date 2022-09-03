@@ -75,7 +75,6 @@ a.dropdown {
 
 ul.menu{
     text-align: right;
-    display: none;
     list-style: none;
     padding: 0;
     margin-top: 10px;
@@ -84,6 +83,14 @@ ul.menu{
     border-radius: 2px;
     z-index: 5;
     position: absolute;
+}
+
+#menu1{
+    transition: 0.5s;
+}
+
+#menu2{
+    transition: 0.5s;
 }
 
 ul.menu li{
@@ -187,6 +194,7 @@ ul.menu li:hover > a{
         border: 0;
         box-shadow: 0 0 0;
         height:0;
+        opacity: 1!important;
     }
 
     ul.menu li{
