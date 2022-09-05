@@ -16,6 +16,7 @@
     />
     <link rel="stylesheet" href="CSS/header.css" />
     <link rel="stylesheet" href="CSS/footer.css" />
+    <link rel="stylesheet" href="CSS/activities-news.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -28,7 +29,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="js/header.js"></script>
     <title>News and Activities | جمعية الصداقة والتعاون اليمنية</title>
   </head>
   <body>
@@ -46,19 +46,27 @@
           <li><a href="index.html">الرئيسية</a></li>
           <li><a href="about.html">من نحن</a></li>
           <li><a href="activities-news.html">الأخبار ولأنشطة</a></li>
-          <li id="dropdown1" onclick="subToggleMenu()">
-            <a class="dropdown">مجالات العمل <span>&#812;</span></a>
-            <ul class="menu" id="menu1">
-              <li><a href="">الأوقاف والإستثمار</a></li>
-              <li><a href="">الدراسات والبحوث</a></li>
-              <li><a href="">التدريب وبناء القدرات</a></li>
-              <li><a href="">التعليم</a></li>
-              <li><a href="">التمكين الإقتصادي</a></li>
-              <li><a href="">المبادرات المجتمعية</a></li>
-            </ul>
-          </li>
+          <div onmouseleave="fadeOut()" onmouseenter="fadeIn()">
+            <li id="dropdown1" onclick="subToggleMenu()">
+              <a class="dropdown">مجالات العمل <span>&#812;</span></a>
+              <ul class="menu" id="menu1">
+                <li><a href="">الأوقاف والإستثمار</a></li>
+                <li><a href="">الدراسات والبحوث</a></li>
+                <li><a href="">التدريب وبناء القدرات</a></li>
+                <li><a href="">التعليم</a></li>
+                <li><a href="">التمكين الإقتصادي</a></li>
+                <li><a href="">المبادرات المجتمعية</a></li>
+              </ul>
+            </li>
+          </div>
+
           <li><a href="">تقارير المشاريع</a></li>
-          <li id="dropdown2" onclick="subToggleMenu2()">
+          <li
+            id="dropdown2"
+            onclick="subToggleMenu2()"
+            onmouseleave="fadeOut2()"
+            onmouseenter="fadeIn2()"
+          >
             <a class="dropdown">المركز الإعلامي <span>&#812;</span></a>
             <ul class="menu" id="menu2">
               <li><a href="">معرض الصور</a></li>
@@ -84,6 +92,10 @@
             menulist.style.height = "307px";
           } else {
             menulist.style.height = "0px";
+            subMenulist.style.display = "none";
+            subMenulist.style.height = "0px";
+            subMenulist2.style.display = "none";
+            subMenulist2.style.height = "0px";
           }
         }
 
@@ -150,7 +162,511 @@
             subMenulist2.style.display = "none";
           }
         }
+
+        var menu1 = document.getElementById("menu1");
+        menu1.style.opacity = "0";
+        var menu2 = document.getElementById("menu2");
+        menu2.style.opacity = "0";
+
+        function fadeIn() {
+          if (menu1.style.opacity == "0" && window.innerWidth > 700) {
+            menu1.style.opacity = "1";
+          }
+        }
+        function fadeOut() {
+          if (menu1.style.opacity == "1" && window.innerWidth > 700) {
+            menu1.style.opacity = "0";
+          }
+        }
+        function fadeIn2() {
+          if (menu2.style.opacity == "0" && window.innerWidth > 700) {
+            menu2.style.opacity = "1";
+          }
+        }
+        function fadeOut2() {
+          if (menu2.style.opacity == "1" && window.innerWidth > 700) {
+            menu2.style.opacity = "0";
+          }
+        }
       </script>
     </header>
+    <h1 class="activities-news-title">الأخبار والأنشطة</h1>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="images/activities-news-image-1.jpg" alt="" />
+            <div class="header">
+              <div class="title">كروت المواد الغذائية</div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="images/activities-news-image-2.jpg" alt="" />
+            <div class="header">
+              <div class="title">برنامج رواحل التدريبي</div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="images/activities-news-image-3.jpg" alt="" />
+            <div class="header">
+              <div class="title">التعليم</div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="images/activities-news-image-7.png" alt="" />
+            <div class="header">
+              <div class="title">
+                سفير بلادنا لدى تركيا في زيارة لجمعية الصداقة والتعاون اليمنية –
+                إسطنبول.
+              </div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="images/activities-news-image-5.jpg" alt="" />
+            <div class="header">
+              <div class="title">
+                بحضور نائب وزير الداخلية التركي ونائب والي إسطنبول ورئيس دائرة
+                الهجرة، تقيم جمعية الصداقة والتعاون اليمنية-تركيا أمسية رمضانية.
+              </div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="" alt="" />
+            <div class="header">
+              <div class="title">اختتام الملتقى الطلابي الصيفي</div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="images/activities-news-image-6.jpg" alt="" />
+            <div class="header">
+              <div class="title">
+                الدكتور/ محمد الحجاجي في زيارة إلى جمعية الصداقة والتعاون
+                اليمنية – إسطنبول.
+              </div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="images/activities-news-image-2.jpg" alt="" />
+            <div class="header">
+              <div class="title">
+                جمعية الصداقة والتعاون اليمنية في زيارة إلى Bursa Uludağ
+                Üniversitesi – بورصة.
+              </div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="images/activities-news-image-20.jpg" alt="" />
+            <div class="header">
+              <div class="title">
+                جمعية الصداقة والتعاون اليمنية في زيارة إلى İstanbul Medeniyet
+                Üniversitesi – إسطنبول.
+              </div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="" alt="" />
+            <div class="header">
+              <div class="title">
+                اختتام فعاليات مؤتمر الهوية الوطنية بمشاركة يمنيين في أكثر من 30
+                دولة حول العالم.
+              </div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="images/activities-news-image-21.png" alt="" />
+            <div class="header">
+              <div class="title">
+                جمعية الصداقة والتعاون اليمنية في زيارة إلى شركة Synergia –
+                إسطنبول.
+              </div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="" alt="" />
+            <div class="header">
+              <div class="title">
+                زيارة رجل الأعمال عبد الملك الدلالي، ورجل الأعمال عبد المنعم
+                الصلاحي، إلى جمعية الصداقة والتعاون اليمنية – إسطنبول.
+              </div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="" alt="" />
+            <div class="header">
+              <div class="title">
+                جمعية الصداقة والتعاون اليمنية في زيارة عبر الزوم مع جامعة
+                الفاتح – إسطنبول.
+              </div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="images/activities-news-image-22.png" alt="" />
+            <div class="header">
+              <div class="title">
+                جمعية الصداقة والتعاون اليمنية في زيارة إلىİSTANBUL TİCARET
+                ÜNİVERSİTESİ – إسطنبول.
+              </div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="images/activities-news-image-23.jpg" alt="" />
+            <div class="header">
+              <div class="title">
+                جمعية بحر الخيرات (Iyilik Denizi Derneği) في زيارة إلى جمعية
+                الصداقة والتعاون اليمنية – إسطنبول.
+              </div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="images/activities-news-image-19.jpg" alt="" />
+            <div class="header">
+              <div class="title">
+                جمعية الصداقة والتعاون اليمنية في زيارة إلى İHH Vakfı – إسطنبول.
+              </div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="images/activities-news-image-24.jpg" alt="" />
+            <div class="header">
+              <div class="title">
+                جمعية الصداقة والتعاون اليمنية في زيارة إلى UMUT KERVANI VAKFI –
+                إسطنبول.
+              </div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="images/activities-news-image-4.jpg" alt="" />
+            <div class="header">
+              <div class="title">
+                جمعية الصداقة والتعاون اليمنية في زيارة إلى جمعية تنمية الأعمال
+                ـــ إسطنبول.
+              </div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="images/activities-news-image-25.jpg" alt="" />
+            <div class="header">
+              <div class="title">
+                جمعية الصداقة والتعاون اليمنية في زيارة إلى İhlas Vakfı –
+                إسطنبول.
+              </div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="images/activities-news-image-8.jpg" alt="" />
+            <div class="header">
+              <div class="title">
+                جمعية الصداقة والتعاون اليمنية تزور جمعية İnsani İnşa Derneği –
+                -إسطنبول.
+              </div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="images/activities-news-image-9.jpg" alt="" />
+            <div class="header">
+              <div class="title">
+                جمعية الصداقة والتعاون اليمنية تزور جمعية Beşir Derneği –
+                إسطنبول.
+              </div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="images/activities-news-image-10.jpg" alt="" />
+            <div class="header">
+              <div class="title">
+                اختتام ملتقى نحن يمانيون 2 العائلي بمدينة يالوفا
+              </div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="images/activities-news-image-11.jpg" alt="" />
+            <div class="header">
+              <div class="title">
+                اختتام المركز الصيفي الثاني لحفظ وتلقين القرآن الكريم
+              </div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="images/activities-news-image-12.jpg" alt="" />
+            <div class="header">
+              <div class="title">
+                جمعية الصداقة والتعاون اليمنية-تركيا في زيارة لوقف الالدعوة
+                والإخوة بتركيا
+              </div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="images/activities-news-image-3.jpg" alt="" />
+            <div class="header">
+              <div class="title">
+                احتفال اتحاد الطلاب اليمنيين في تركيا – فرع كارابوك بتخرج 14
+                طالب وطالبة من مختلف التخصصات بسكن الصداقة الجامعي بكارابوك.
+              </div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="images/activities-news-image-13.jpg" alt="" />
+            <div class="header">
+              <div class="title">
+                رئيس ونائب جامعة كارابوك في زيارةخاصة لسكن الصداقة الطلابي
+              </div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="images/activities-news-image-14.jpg" alt="" />
+            <div class="header">
+              <div class="title">
+                جمعية همة الشبابية تزور جمعية الصداقة والتعاون اليمنية-تركيا.
+              </div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="images/activities-news-image-15.jpg" alt="" />
+            <div class="header">
+              <div class="title">
+                زيارة اتحاد الطلاب اليمنيين في تركيا و الهيئة الإدارية من فرع
+                كرامان جمعية الصداقة والتعاون اليمنية-تركيا بمكتبها في اسطنبول.
+              </div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="images/activities-news-image-16.jpg" alt="" />
+            <div class="header">
+              <div class="title">
+                مركز الصداقة للتدريب والتأهيل يدشن مركز تاج الوقار الصيفي لحفظ
+                وتلقين القرآن الكريم.
+              </div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="images/activities-news-image-17.jpg" alt="" />
+            <div class="header">
+              <div class="title">
+                جمعية الصداقة والتعاون اليمنية-تركيا تحصل على قبولات في عدة
+                تخصصات بجامعة سكاريا 2020-2021
+              </div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="img">
+          <a href=""
+            ><img src="images/activities-news-image-18.jpg" alt="" />
+            <div class="header">
+              <div class="title">
+                جمعية الصداقة والتعاون اليمنية-تركيا تدشن مبادرتها
+                الانسانيةالثانية للأسر اليمنية في تركيا
+              </div>
+              <div class="read-more">إقرأ المزيد</div>
+            </div></a
+          >
+        </div>
+      </div>
+    </div>
+    <footer style="top: 0">
+      <img src="images/YDT-image.png" />
+      <ul>
+        <li class="contact">
+          <h2><b>تواصل معنا</b></h2>
+          <ul>
+            <li>
+              <span class="glyphicon glyphicon-map-marker"></span> إسطنبول-
+              تركيا
+            </li>
+            <li>
+              <span class="glyphicon glyphicon-earphone"></span> 905369922950+
+            </li>
+            <li>
+              <span class="glyphicon glyphicon-envelope"></span>
+              amr.nawaf128@gmail.com
+            </li>
+          </ul>
+        </li>
+        <li class="social">
+          <h2><b>تابعنا</b></h2>
+          <ul>
+            <li>
+              <a href="#" class="bi bi-facebook"></a>
+            </li>
+            <li>
+              <a href="#" class="bi bi-twitter"></a>
+            </li>
+            <li>
+              <a href="#" class="bi bi-instagram"></a>
+            </li>
+            <li>
+              <a href="#" class="bi bi-youtube"></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>

@@ -83,6 +83,7 @@ ul.menu{
     border-radius: 2px;
     z-index: 5;
     position: absolute;
+    opacity: 0;
 }
 
 #menu1{
