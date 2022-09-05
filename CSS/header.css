@@ -46,7 +46,7 @@ nav .navigation li{
 
 nav .navigation li a{
     font-family: 'Noto Sans Arabic', sans-serif;
-    font-size: 1.3vw;
+    font-size: 20px;
     color:rgba(255, 252, 252, 0.918);
     text-shadow: 1px 2px rgb(23, 23, 23);
     background-color: transparent;
@@ -110,7 +110,7 @@ ul.menu li a{
     padding: 0;
     color: black;
     text-shadow:none;
-    font-size: 1vw;
+    font-size: 15px;
 }
 
 ul.menu li:hover > a{
@@ -220,5 +220,17 @@ ul.menu li:hover > a{
         margin: 0;
         overflow-x: hidden;
     }
+
+    nav .navigation li a{
+        color: white;
+        font-size: 15px;
+    }
+
+    ul.menu li a{
+        margin: 0;
+        padding: 0;
+        color: rgb(24, 24, 24);
+        font-size: 13px;
+}
 }
 

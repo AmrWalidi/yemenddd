@@ -99,3 +99,17 @@ background-color: white;
         max-width: 100%;
     }
 }
+
+@media screen and (min-width:700px) and (max-width:1000px){
+
+    .carousel{
+        position: relative!important;
+        top: 0;
+        left: 0;
+        float: left;
+        padding-top: 10px;
+        bottom: 0;
+        right: 0;
+    }
+
+}
