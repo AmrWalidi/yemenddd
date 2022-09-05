@@ -1,0 +1,170 @@
+.work-fields-container{
+    top: 10px;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.work-fields-container-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.2;
+}
+
+.work-fields-container-paragraph{
+    padding: 30px 50px;
+position:absolute;
+width: 600px;
+height: fit-content;
+top: 10%;
+right: 15%;
+background-color:hsl(200, 96%, 42%,0.3)  ;
+}
+
+
+.work-fields-container-paragraph h1{
+    font-size: 50px;
+    color: white;
+    font-family: "Readex Pro";
+    padding-bottom: 20px;
+}
+
+.work-fields-container-paragraph h3{
+    font-size: 20px;
+    color: white;
+    font-family: "Readex Pro";
+}
+
+
+.work-fields-container-paragraph p{
+    color: white;
+    font-size: 23px;
+    font-family: "Markazi Text";
+}
+
+.work-fields-container-paragraph ul li{
+    color: white;
+    font-size: 23px;
+    font-family: "Markazi Text";
+
+}
+
+.work-fields-numbers{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    padding: 10px; 
+    margin-top: 30px;
+}
+
+.work-fields-numbers h1{
+    font-size: 50px;
+    color: rgb(35, 35, 35);
+    font-family: "Readex Pro";
+    padding-bottom: 20px;
+
+}
+
+.work-fields-numbers ul{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 50px 0 40px;
+
+}
+
+.work-fields-numbers ul li{
+    margin: 0 30px;
+    color: rgba(86, 86, 86, 0.868);
+    font-size: 20px;
+    font-family: "Cairo";
+}
+
+.work-fields-numbers .bi{
+    font-size: 50px;
+}
+
+@media screen and  (min-width:700px) and (max-width:1000px){
+    .work-fields-container{
+        position: relative;
+        top: 15px;
+    }
+    
+}
+
+@media only screen and (max-width:700px){
+    .work-fields-container{
+        position: relative;
+        top: 10px;
+    }
+
+    .work-fields-container-paragraph{
+        padding: 15px;
+    width: 90vw;
+    height: fit-content;
+    text-align: center;
+    position: relative;
+    right: 5%;
+    top: 3%;
+    }
+    
+    
+    .work-fields-container-paragraph h1{
+        font-size: 8vw;
+    }
+    .work-fields-container-paragraph p{
+        font-size: 20px;
+    }
+
+    .work-fields-container-paragraph ul li{
+        color: white;
+        font-size: 23px;
+        font-family: "Markazi Text";
+        list-style: none;
+    
+    }
+
+    .work-fields-container-paragraph h3{
+     text-align: center;
+    }
+
+    .work-fields-container-paragraph ul{
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+        padding-right:0 ;
+    }
+
+    .work-fields-container-paragraph ul li{
+        font-size: 3.5vw;
+    }
+
+    .work-fields-numbers ul{
+        display: block;
+        padding-bottom: 40px;
+    }
+
+    .work-fields-numbers ul li{
+        margin-top: 40px;
+    }
+    
+    .work-fields-numbers h1{
+        font-size: 40px;
+        padding-bottom: 10px;
+    
+    }
+    
+}
+
+@media only screen and (max-width:400px){
+    .work-fields-container-paragraph p{
+        font-size: 5vw;
+    }
+}

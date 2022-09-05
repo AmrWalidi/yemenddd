@@ -10,8 +10,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=El+Messiri&family=Noto+Sans+Arabic:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Cairo:wght@700&family=El+Messiri&family=Gulzar&family=Hurricane&family=Jomhuria&family=Markazi+Text&family=Noto+Sans+Arabic:wght@500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="CSS/header.css" />
@@ -51,10 +53,10 @@
             <li id="dropdown1" onclick="subToggleMenu()">
               <a class="dropdown">مجالات العمل <span>&#812;</span></a>
               <ul class="menu" id="menu1">
-                <li><a href="">الأوقاف والإستثمار</a></li>
-                <li><a href="">الدراسات والبحوث</a></li>
-                <li><a href="">التدريب وبناء القدرات</a></li>
-                <li><a href="">التعليم</a></li>
+                <li><a href="work-field-1.html">الأوقاف والإستثمار</a></li>
+                <li><a href="work-field-2.html">الدراسات والبحوث</a></li>
+                <li><a href="work-field-3.html">التدريب وبناء القدرات</a></li>
+                <li><a href="work-fields-4.html">التعليم</a></li>
                 <li><a href="">التمكين الإقتصادي</a></li>
                 <li><a href="">المبادرات المجتمعية</a></li>
               </ul>
@@ -106,25 +108,25 @@
             menulist.style.height == "307px"
           ) {
             subMenulist.style.display = "block";
-            subMenulist.style.height = "100px";
-            menulist.style.height = "414px";
+            subMenulist.style.height = "210px";
+            menulist.style.height = "524px";
           } else if (
             subMenulist.style.height == "0px" &&
             menulist.style.height == "414px"
           ) {
             subMenulist.style.display = "block";
-            subMenulist.style.height = "100px";
-            menulist.style.height = "521px";
+            subMenulist.style.height = "210px";
+            menulist.style.height = "631px";
           } else if (
             (subMenulist.style.height =
-              "100px" && menulist.style.height == "414px")
+              "100px" && menulist.style.height == "524px")
           ) {
             subMenulist.style.height = "0px";
             menulist.style.height = "307px";
             subMenulist.style.display = "none";
           } else if (
             (subMenulist.style.height =
-              "100px" && menulist.style.height == "521px")
+              "100px" && menulist.style.height == "631px")
           ) {
             subMenulist.style.height = "0px";
             menulist.style.height = "414px";
@@ -142,21 +144,21 @@
             menulist.style.height = "414px";
           } else if (
             subMenulist2.style.height == "0px" &&
-            menulist.style.height == "414px"
+            menulist.style.height == "524px"
           ) {
             subMenulist2.style.display = "block";
             subMenulist2.style.height = "100px";
-            menulist.style.height = "521px";
+            menulist.style.height = "631px";
           } else if (
             subMenulist2.style.height == "100px" &&
-            menulist.style.height == "521px"
+            menulist.style.height == "631px"
           ) {
-            menulist.style.height = "414px";
+            menulist.style.height = "524px";
             subMenulist2.style.height = "0px";
             subMenulist2.style.display = "none";
           } else if (
             subMenulist2.style.height == "100px" &&
-            menulist.style.height == "414px"
+            menulist.style.height == "524px"
           ) {
             menulist.style.height = "307px";
             subMenulist2.style.height = "0px";
