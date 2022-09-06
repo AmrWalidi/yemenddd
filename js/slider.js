@@ -15,6 +15,12 @@ $(".item1").click(function(){
   $(".item4").click(function(){
     $("#myCarousel").carousel(3);
   });
+  $(".item5").click(function(){
+    $("#myCarousel").carousel(4);
+  });
+  $(".item6").click(function(){
+    $("#myCarousel").carousel(5);
+  });
     // Enable Carousel Controls
     $("#left").click(function () {
       $("#myCarousel").carousel("prev");

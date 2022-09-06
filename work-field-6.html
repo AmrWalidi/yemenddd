@@ -31,7 +31,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>الدراسات والبحوث | جمعية الصداقة والتعاون اليمنية</title>
+    <title>المبادرات المجتمعية | جمعية الصداقة والتعاون اليمنية</title>
   </head>
   <body>
     <header>
@@ -194,24 +194,120 @@
     </header>
     <section
       class="work-fields-container"
-      style="background-image: url(images/work-fields-image-2.jpg)"
+      style="background-image: url(images/work-fields-image-6.jpg)"
     >
       <div class="work-fields-container-overlay"></div>
       <div class="work-fields-container-paragraph">
-        <h1>الدراسات والبحوث</h1>
+        <h1>المبادرات المجتمعية</h1>
+        <h3>رؤيتنا :</h3>
         <p>
-          هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا
-          النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من
-          النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. إذا كنت
-          تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد
-          الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص
-          العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من
-          الأحيان أن يطلع على صورة حقيقية لتصميم الموقع. ومن هنا وجب على المصمم
-          أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص
-          العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع
-          الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.
+          تنفيذ مبادرات مجتمعية ذات أثر إنساني فاعل، يسهم في التخفيف من معاناة
+          المحتاجين، ويستجيب لحالات التدخل الطارئة وقت الأزمات والكوارث.
         </p>
+        <h3>برامجنا :</h3>
+        <ul>
+          <li>برامج الاستجابة الانسانية.</li>
+          <li>مبادرات مجتمعية.</li>
+          <li>مبادرات شبابية وموسمية.</li>
+        </ul>
       </div>
+    </section>
+    <section class="work-fields-numbers">
+      <h1>إنجازاتنا في تركيا</h1>
+      <ul>
+        <li>
+          <div class="bi bi-cash-coin"></div>
+          <div>المساعدات العينية والنقدية.</div>
+        </li>
+        <li>
+          <div class="bi bi-people"></div>
+          <div>إقامة المخيمات الصيفية والملتقيات الشبابية</div>
+        </li>
+        <li>
+          <div class="bi bi-tsunami"></div>
+          <div>رعاية الملتقيات والأنشطة الطلابية</div>
+        </li>
+      </ul>
+      <h1>المبادرات داخل اليمن</h1>
+      <ul>
+        <li>
+          <ul class="sublist">
+            <li>المشاركة في الاعداد والترتيب للمؤتمر العالمي لإغاثة اليمن</li>
+            <li>كفالة الأيتام.</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="sublist">
+            <li>توزيع لحوم الأضاحي.</li>
+            <li>توزيع الكسوة على المحتاجين.</li>
+            <li>الكفالات الاجتماعية المتنوعة.</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="sublist">
+            <li>الحقيبة المدرسية.</li>
+            <li>حلقات القرآن الكريم والعلوم الشرعية.</li>
+          </ul>
+        </li>
+      </ul>
+      <h1>المبادرات المجتمعية</h1>
+      <ul>
+        <li>
+          <div class="bi bi-person"></div>
+          <div class="num">1955</div>
+          <div>فرد</div>
+        </li>
+        <li>
+          <div class="bi bi-image"></div>
+          <div>ملتقى نحن اليمانيون العائلي الثالث</div>
+          <div class="num">520</div>
+          <div>فرد</div>
+        </li>
+        <li>
+          <div class="bi bi-person-bounding-box"></div>
+          <div>مؤتمر الهوية الوطنية</div>
+          <div class="num">870</div>
+          <div>فرد</div>
+        </li>
+        <li>
+          <div class="bi bi-people"></div>
+          <div>ملتقيات شبابية</div>
+          <div class="num">565</div>
+          <div>فرد</div>
+        </li>
+      </ul>
+      <script>
+        let section = document.querySelector(
+          ".work-fields-container-paragraph"
+        );
+        let started = false;
+
+        window.onscroll = function () {
+          if (window.scrollY >= section.offsetTop) {
+            if (!started) {
+              $(document).ready(function () {
+                $(".num").each(function () {
+                  $(this)
+                    .prop("Counter", 0)
+                    .animate(
+                      {
+                        Counter: $(this).text(),
+                      },
+                      {
+                        duration: 3000,
+                        easing: "swing",
+                        step: function (now) {
+                          $(this).text(Math.ceil(now));
+                        },
+                      }
+                    );
+                });
+              });
+            }
+            started = true;
+          }
+        };
+      </script>
     </section>
     <footer style="top: 20px">
       <img src="images/YDT-image.png" />
