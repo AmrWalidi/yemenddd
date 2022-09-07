@@ -1,0 +1,198 @@
+.contact-section{
+    position: relative;
+    top: 20px;
+    padding: 70px 0;
+    width: 100%;
+    height: fit-content;
+    background: linear-gradient(to right,#0070A8,#33a7e0);
+}
+
+
+.Info h1{
+    margin-right: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold ;
+    color: #fff;
+    text-shadow: 5px 3px black;
+}
+
+
+
+.Info ul{
+    padding-top: 30px;
+    list-style: none;
+}
+
+.Info ul li{
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: "Baloo Bhaijaan 2";
+    color: rgb(227, 224, 224);
+    font-weight: bold;
+}
+
+.Info ul span{
+    width: 40px;
+    height:40px;
+    background-color: rgb(248, 247, 247);
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-left: 20px;
+    text-shadow: 1px 1px black;
+    color: #0070A8;
+    float: right;
+}
+
+.Info ul h3{
+    font-weight: bold;
+    font-family:"Markazi Text";
+    color: #fff;
+    text-shadow: 2px 2px black;
+}
+
+
+.social ul{
+    padding-top: 30px;
+    list-style: none;
+    display: flex;
+}
+
+.social ul li{
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: "Baloo Bhaijaan 2";
+    color: #000;
+    margin-right: 20px;
+}
+
+.social h1{
+    margin-right: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold ;
+    color: #fff;
+    text-shadow: 5px 3px black;
+}
+
+.social .bi{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  width: 30px;
+  padding: 10px;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+
+.contact-form{
+    position: absolute;
+    left: 30%;
+    top:8%;
+}
+
+.contact-form h1{
+    margin-right: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold ;
+    color: #fff;
+    text-shadow: 5px 3px black;
+}
+
+.contact-form form{
+margin-top: 30px;
+}
+
+.contact-form h3{
+    font-weight: bold;
+    font-family:"Markazi Text";
+    color: #fff;
+    text-shadow: 2px 2px black;
+}
+
+input[type ="text"]{
+    height: 35px;
+    width: 250px;
+    border-radius: 5px;
+    background-color: rgb(241, 240, 240);
+}
+
+input[type ="text"]:focus{
+    background-color: rgb(255, 255, 255);
+}
+
+input[type ="email"]{
+    height: 35px;
+    width: 250px;
+    border-radius: 5px;
+    background-color: rgb(241, 240, 240);
+}
+
+input[type ="email"]:focus{
+    background-color: rgb(255, 255, 255);
+}
+
+input[type ="submit"]{
+    width: fit-content;
+    padding: 5px 20px;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:"Baloo Bhaijaan 2";
+    border-radius: 10px ;
+    background-color: rgb(169, 169, 169);
+    color: #fff;
+    text-shadow: 1px 1px  black;
+}
+
+input[type ="submit"]:active{
+    
+    background-color: rgb(240, 240, 240);
+    color: black;
+    font-weight: bold;
+    text-shadow: 0;
+}
+
+textarea{
+    width: 250px;
+    border-radius: 5px;
+    background-color: rgb(241, 240, 240);
+}
+
+textarea:focus{
+    background-color: #fff;
+}
+
+@media screen and (min-width:700px) and (max-width:1000px){
+    .contact-form{
+        left: 13%;
+        top:8%;
+    }
+}
+
+@media only screen and (max-width:700px){
+    
+
+    .contact-section{
+        position: relative;
+        top: 20px;
+        padding: 70px 0 150px;
+        width: 100%;
+        height: fit-content;
+    }
+    .contact-form{
+        position: relative;
+        right: 10px;
+        bottom: 100px;
+    }
+
+    .contact-form form{
+        margin-top: 30px;
+        margin-right: 50px;
+        }
+
+    .social{
+        position: relative;
+        top: 700px;
+    }
+}
