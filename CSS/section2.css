@@ -5,12 +5,15 @@
 }
 
 .section2-icons{
+    justify-content: center;
+    text-align: center;
+    width: 100%;
     display:flex;
-    margin-right: 16%;
+    margin-right: 4%;
 }
 
 .section2-icons div{
-    margin-right: 16%;
+    margin-left: 8%;
 }
 
 .section2-icons div:hover{

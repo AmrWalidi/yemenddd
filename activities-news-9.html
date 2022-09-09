@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" type="image" href="images/YDT-icon.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Cairo:wght@700&family=El+Messiri&family=Gulzar&family=Hurricane&family=Jomhuria&family=Markazi+Text&family=Noto+Sans+Arabic:wght@500&display=swap"
+        rel="stylesheet"
+      />
+        <link rel="stylesheet" href="CSS/header.css" />
+        <link rel="stylesheet" href="CSS/activities-news.css">
+        <link rel="stylesheet" href="CSS/activities-news-containers.css">
+        <link rel="stylesheet" href="CSS/footer.css" />
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="js/slider.js"></script>
+        <title>جمعية الصداقة والتعاون اليمنية في زيارة إلى İstanbul Medeniyet Üniversitesi – إسطنبول.
+            | جمعية الصداقة والتعاون اليمنية</title>
+</head>
+<body>
+  <header>
+        <img
+          class="YDT"
+          width="200px"
+          height="90px"
+          src="images/YDT-image.png"
+          alt="yemendd image"
+        />
+        <nav>
+          <img class="icon" onclick="toggleMenu()" src="images/nav icon.png" />
+          <ul class="navigation" id="navigation">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="activities-news.html">الأخبار ولأنشطة</a></li>
+            <div onmouseleave="fadeOut()" onmouseenter="fadeIn()">
+              <li id="dropdown1" onclick="subToggleMenu()">
+                <a class="dropdown">مجالات العمل <span>&#812;</span></a>
+                <ul class="menu" id="menu1">
+                  <li><a href="work-field-1.html">الأوقاف والإستثمار</a></li>
+                  <li><a href="work-field-2.html">الدراسات والبحوث</a></li>
+                  <li><a href="work-field-3.html">التدريب وبناء القدرات</a></li>
+                  <li><a href="work-fields-4.html">التعليم</a></li>
+                  <li><a href="work-field-5.html">التمكين الإقتصادي</a></li>
+                  <li><a href="work-field-6.html">المبادرات المجتمعية</a></li>
+                </ul>
+              </li>
+            </div>
+  
+            <li><a href="project-reports.html">تقارير المشاريع</a></li>
+            <li
+              id="dropdown2"
+              onclick="subToggleMenu2()"
+              onmouseleave="fadeOut2()"
+              onmouseenter="fadeIn2()"
+            >
+              <a class="dropdown">المركز الإعلامي <span>&#812;</span></a>
+              <ul class="menu" id="menu2">
+                <li><a href="studio-photos.html">معرض الصور</a></li>
+                <li><a href="studio-videos.html">الفيديوهات</a></li>
+                <li><a href="annual-reports.html">التقارير السنوية</a></li>
+              </ul>
+            </li>
+            <li><a href="donations.html">تبرع</a></li>
+            <li><a href="contact.htmls">تواصل معنا</a></li>
+          </ul>
+        </nav>
+        <script>
+          var menulist = document.getElementById("navigation");
+          var subMenulist = document.getElementById("menu1");
+          var subMenulist2 = document.getElementById("menu2");
+  
+          menulist.style.height = "0px";
+          subMenulist.style.height = "0px";
+          subMenulist2.style.height = "0px";
+  
+          function toggleMenu() {
+            if (menulist.style.height == "0px") {
+              menulist.style.height = "307px";
+            } else {
+              menulist.style.height = "0px";
+              subMenulist.style.display = "none";
+              subMenulist.style.height = "0px";
+              subMenulist2.style.display = "none";
+              subMenulist2.style.height = "0px";
+            }
+          }
+  
+          function subToggleMenu() {
+            if (
+              subMenulist.style.height == "0px" &&
+              menulist.style.height == "307px"
+            ) {
+              subMenulist.style.display = "block";
+              subMenulist.style.height = "210px";
+              menulist.style.height = "524px";
+            } else if (
+              subMenulist.style.height == "0px" &&
+              menulist.style.height == "414px"
+            ) {
+              subMenulist.style.display = "block";
+              subMenulist.style.height = "210px";
+              menulist.style.height = "631px";
+            } else if (
+              (subMenulist.style.height =
+                "100px" && menulist.style.height == "524px")
+            ) {
+              subMenulist.style.height = "0px";
+              menulist.style.height = "307px";
+              subMenulist.style.display = "none";
+            } else if (
+              (subMenulist.style.height =
+                "100px" && menulist.style.height == "631px")
+            ) {
+              subMenulist.style.height = "0px";
+              menulist.style.height = "414px";
+              subMenulist.style.display = "none";
+            }
+          }
+  
+          function subToggleMenu2() {
+            if (
+              subMenulist2.style.height == "0px" &&
+              menulist.style.height == "307px"
+            ) {
+              subMenulist2.style.display = "block";
+              subMenulist2.style.height = "100px";
+              menulist.style.height = "414px";
+            } else if (
+              subMenulist2.style.height == "0px" &&
+              menulist.style.height == "524px"
+            ) {
+              subMenulist2.style.display = "block";
+              subMenulist2.style.height = "100px";
+              menulist.style.height = "631px";
+            } else if (
+              subMenulist2.style.height == "100px" &&
+              menulist.style.height == "631px"
+            ) {
+              menulist.style.height = "524px";
+              subMenulist2.style.height = "0px";
+              subMenulist2.style.display = "none";
+            } else if (
+              subMenulist2.style.height == "100px" &&
+              menulist.style.height == "524px"
+            ) {
+              menulist.style.height = "307px";
+              subMenulist2.style.height = "0px";
+              subMenulist2.style.display = "none";
+            }
+          }
+  
+          var menu1 = document.getElementById("menu1");
+          menu1.style.opacity = "0";
+          var menu2 = document.getElementById("menu2");
+          menu2.style.opacity = "0";
+  
+          function fadeIn() {
+            if (menu1.style.opacity == "0" && window.innerWidth > 700) {
+              menu1.style.opacity = "1";
+            }
+          }
+          function fadeOut() {
+            if (menu1.style.opacity == "1" && window.innerWidth > 700) {
+              menu1.style.opacity = "0";
+            }
+          }
+          function fadeIn2() {
+            if (menu2.style.opacity == "0" && window.innerWidth > 700) {
+              menu2.style.opacity = "1";
+            }
+          }
+          function fadeOut2() {
+            if (menu2.style.opacity == "1" && window.innerWidth > 700) {
+              menu2.style.opacity = "0";
+            }
+          }
+        </script>
+    </header>
+    <h1 class="activities-news-title">جمعية الصداقة والتعاون اليمنية في زيارة إلى İstanbul Medeniyet Üniversitesi.
+    </h1>
+    <div >
+            <img  width="40%" class="activities-news-image"  src="images/activities-news-image-20.jpg" alt="">
+    </div>
+    <div class="activities-news-paragraph">
+        قام رئيس جمعية الصداقة والتعاون اليمنية الدكتور/ أحمد العقبي، ومدير إدارة الموارد المالية للجمعية المستشار/ نجيب يماني، ومسؤول العلاقات بالجمعية/ الأستاذ/ عبد الحكيم ميرزا، الثلاثاء 08/06/2021م، بزيارة إلى جامعة İstanbul Medeniyet Üniversitesi التقوا خلالها Prof. Dr. Yaşar BÜLBÜL رئيس الجامعة.
+ <br><br>
+        وخلال اللقاء شرح رئيس الجمعية الدكتور/ أحمد العقبي، أعمال ومشاريع جمعية الصداقة ودورها الفاعل في الاسهام في احتضان الطلاب اليمنيين الدارسين في الجامعات التركية وتقديم الدعم الأكاديمي والمادي والمعنوي للطلاب.
+        وخلال اللقاء قدر Prof. Dr. Yaşar BÜLBÜL جهود الجمعية واستعرض الفرص المتاحة من قبل الجامعة وسُبل التعاون المتاحة في الاسهام في تقديم المساعدات للطلاب اليمنيين في المستقبل.
+         <br><br>
+        وفي ختام اللقاء شكر فريق جمعية الصداقة والتعاون اليمنية، رئيس جامعة İstanbul Medeniyet Üniversitesi على حسن استقباله وتفاعله تجاه قضايا الطلاب اليمنيين متمنياً توطيد العلاقات والشراكة الفاعلة في المستقبل القريب.
+    </div>
+    <footer style="top: 80px">
+        <img src="images/YDT-image.png" />
+        <ul>
+          <li class="contact">
+            <h2><b>تواصل معنا</b></h2>
+            <ul>
+              <li>
+                <span class="glyphicon glyphicon-map-marker"></span> إسطنبول- تركيا
+              </li>
+              <li>
+                <span class="glyphicon glyphicon-earphone"></span> 905369922950+
+              </li>
+              <li>
+                <span class="glyphicon glyphicon-envelope"></span>
+                amr.nawaf128@gmail.com
+              </li>
+            </ul>
+          </li>
+          <li class="social">
+            <h2><b>تابعنا</b></h2>
+            <ul>
+              <li>
+                <a
+                  href="https://www.facebook.com/yemenddd"
+                  class="bi bi-facebook"
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/yemenddd" class="bi bi-twitter"></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/yemen.ddd/"
+                  class="bi bi-instagram"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UCwnyiuNKFCSQpvk50-m1sWg"
+                  class="bi bi-youtube"
+                ></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+    </footer>
+</body>
+</html>
