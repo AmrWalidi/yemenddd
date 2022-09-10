@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" type="image" href="images/YDT-icon.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Cairo:wght@700&family=El+Messiri&family=Gulzar&family=Hurricane&family=Jomhuria&family=Markazi+Text&family=Noto+Sans+Arabic:wght@500&display=swap"
+        rel="stylesheet"
+      />
+        <link rel="stylesheet" href="CSS/header.css" />
+        <link rel="stylesheet" href="CSS/activities-news.css">
+        <link rel="stylesheet" href="CSS/activities-news-containers.css">
+        <link rel="stylesheet" href="CSS/footer.css" />
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="js/slider.js"></script>
+        <title> 
+            منح تخفيضات في جامعة السودان المفتوحة عن طريق جمعيةالصداقة
+           | جمعية الصداقة والتعاون اليمنية</title>
+</head>
+<body>
+<header>
+        <img
+          class="YDT"
+          width="200px"
+          height="90px"
+          src="images/YDT-image.png"
+          alt="yemendd image"
+        />
+        <nav>
+          <img class="icon" onclick="toggleMenu()" src="images/nav icon.png" />
+          <ul class="navigation" id="navigation">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="activities-news.html">الأخبار ولأنشطة</a></li>
+            <div onmouseleave="fadeOut()" onmouseenter="fadeIn()">
+              <li id="dropdown1" onclick="subToggleMenu()">
+                <a class="dropdown">مجالات العمل <span>&#812;</span></a>
+                <ul class="menu" id="menu1">
+                  <li><a href="work-field-1.html">الأوقاف والإستثمار</a></li>
+                  <li><a href="work-field-2.html">الدراسات والبحوث</a></li>
+                  <li><a href="work-field-3.html">التدريب وبناء القدرات</a></li>
+                  <li><a href="work-fields-4.html">التعليم</a></li>
+                  <li><a href="work-field-5.html">التمكين الإقتصادي</a></li>
+                  <li><a href="work-field-6.html">المبادرات المجتمعية</a></li>
+                </ul>
+              </li>
+            </div>
+  
+            <li><a href="project-reports.html">تقارير المشاريع</a></li>
+            <li
+              id="dropdown2"
+              onclick="subToggleMenu2()"
+              onmouseleave="fadeOut2()"
+              onmouseenter="fadeIn2()"
+            >
+              <a class="dropdown">المركز الإعلامي <span>&#812;</span></a>
+              <ul class="menu" id="menu2">
+                <li><a href="studio-photos.html">معرض الصور</a></li>
+                <li><a href="studio-videos.html">الفيديوهات</a></li>
+                <li><a href="annual-reports.html">التقارير السنوية</a></li>
+              </ul>
+            </li>
+            <li><a href="donations.html">تبرع</a></li>
+            <li><a href="contact.htmls">تواصل معنا</a></li>
+          </ul>
+        </nav>
+        <script>
+          var menulist = document.getElementById("navigation");
+          var subMenulist = document.getElementById("menu1");
+          var subMenulist2 = document.getElementById("menu2");
+  
+          menulist.style.height = "0px";
+          subMenulist.style.height = "0px";
+          subMenulist2.style.height = "0px";
+  
+          function toggleMenu() {
+            if (menulist.style.height == "0px") {
+              menulist.style.height = "307px";
+            } else {
+              menulist.style.height = "0px";
+              subMenulist.style.display = "none";
+              subMenulist.style.height = "0px";
+              subMenulist2.style.display = "none";
+              subMenulist2.style.height = "0px";
+            }
+          }
+  
+          function subToggleMenu() {
+            if (
+              subMenulist.style.height == "0px" &&
+              menulist.style.height == "307px"
+            ) {
+              subMenulist.style.display = "block";
+              subMenulist.style.height = "210px";
+              menulist.style.height = "524px";
+            } else if (
+              subMenulist.style.height == "0px" &&
+              menulist.style.height == "414px"
+            ) {
+              subMenulist.style.display = "block";
+              subMenulist.style.height = "210px";
+              menulist.style.height = "631px";
+            } else if (
+              (subMenulist.style.height =
+                "100px" && menulist.style.height == "524px")
+            ) {
+              subMenulist.style.height = "0px";
+              menulist.style.height = "307px";
+              subMenulist.style.display = "none";
+            } else if (
+              (subMenulist.style.height =
+                "100px" && menulist.style.height == "631px")
+            ) {
+              subMenulist.style.height = "0px";
+              menulist.style.height = "414px";
+              subMenulist.style.display = "none";
+            }
+          }
+  
+          function subToggleMenu2() {
+            if (
+              subMenulist2.style.height == "0px" &&
+              menulist.style.height == "307px"
+            ) {
+              subMenulist2.style.display = "block";
+              subMenulist2.style.height = "100px";
+              menulist.style.height = "414px";
+            } else if (
+              subMenulist2.style.height == "0px" &&
+              menulist.style.height == "524px"
+            ) {
+              subMenulist2.style.display = "block";
+              subMenulist2.style.height = "100px";
+              menulist.style.height = "631px";
+            } else if (
+              subMenulist2.style.height == "100px" &&
+              menulist.style.height == "631px"
+            ) {
+              menulist.style.height = "524px";
+              subMenulist2.style.height = "0px";
+              subMenulist2.style.display = "none";
+            } else if (
+              subMenulist2.style.height == "100px" &&
+              menulist.style.height == "524px"
+            ) {
+              menulist.style.height = "307px";
+              subMenulist2.style.height = "0px";
+              subMenulist2.style.display = "none";
+            }
+          }
+  
+          var menu1 = document.getElementById("menu1");
+          menu1.style.opacity = "0";
+          var menu2 = document.getElementById("menu2");
+          menu2.style.opacity = "0";
+  
+          function fadeIn() {
+            if (menu1.style.opacity == "0" && window.innerWidth > 700) {
+              menu1.style.opacity = "1";
+            }
+          }
+          function fadeOut() {
+            if (menu1.style.opacity == "1" && window.innerWidth > 700) {
+              menu1.style.opacity = "0";
+            }
+          }
+          function fadeIn2() {
+            if (menu2.style.opacity == "0" && window.innerWidth > 700) {
+              menu2.style.opacity = "1";
+            }
+          }
+          function fadeOut2() {
+            if (menu2.style.opacity == "1" && window.innerWidth > 700) {
+              menu2.style.opacity = "0";
+            }
+          }
+        </script>
+    </header>
+<h1 class="activities-news-title">
+    منح تخفيضات في جامعة السودان المفتوحة عن طريق جمعيةالصداقة
+  </h1>
+<div >
+            <img  width="60%" class="activities-news-image"  src="https://yemenddd.org/wp-content/uploads/2020/01/12.png" alt="">
+    </div>
+<div class="activities-news-paragraph">
+ في إطار التفاهم والشراكة بين جامعة السودان المفتوحة والتي تعد إحدى الجامعات الحكومية السودانية المعترف بها لدى العديد من الجامعات الأوربية والعربية وجمعية الصداقة والتعاون اليمنية ـ تركيا منحت الجامعة تخفيضاً للطلاب اليمنيين في تركيا في جميع المراحل. علماً أن الدراسة في الجامعة تتم بنظام التعليم عن بعد وتتم المناقشة والامتحانات في تركيا عبر فرع الجامعة بإسطنبول، والتخفيض يشمل جميع التخصصات على النحو التالي:
+ <br><br> البكالوريوس 600 دولار للعام الدراسي
+<br> الدبلوم العالي 1500 دولار
+الماجستير 3000 دولار <br>
+الدكتوراه 4500 دولار <br><br>
+التخصصات المتاحة: <br>
+1) الدراسات الإسلامية واللغة العربية ( بكالوريوس + ماجستير + دكتوراه ) <br>
+2) اللغة العربية والتاريخ (بكالوريوس) <br>
+3) الدراسات الإسلامية والجغرافيا (بكالوريوس) <br>
+4) الدراسات الإسلامية والتاريخ (بكالوريوس) <br>
+5) الجغرافيا والتاريخ ( بكالوريوس + دبلوم عالي + ماجستير + دكتوراه ) <br>
+6) الرياضيات والحاسوب (بكالوريوس) <br>
+7) الرياضيات والفيزياء (بكالوريوس) <br>
+8) الكيمياء والأحياء (بكالوريوس) <br>
+9) الأحياء والإنتاج الحيواني (بكالوريوس) <br>
+10) اللغة الإنجليزية (بكالوريوس) <br>
+11) رياض أطفال (بكالوريوس) <br>
+12) إدارة أعمال ( بكالوريوس + دبلوم عالي + ماجستير + دكتوراه ) <br>
+13) المحاسبة (بكالوريوس + دبلوم عالي + ماجستير + دكتوراه ) <br>
+14) القانون ( بكالوريوس + ماجستير + دكتوراه ) <br>
+15) اللغات ـ اللغة العربية ــ اللغة الإنجليزية ( بكالوريوس + دبلوم عالي + ماجستير + دكتوراه ) <br>
+16) الاقتصاد والعلوم المالية والإسلامية (إقتصاد إسلامي ـ تمويل إسلامي ) <br>
+17) الإعلام ـ إذاعة وتلفزيون ــ العلاقات العامة والإعلان ـ الصحافة والنشر <br>
+18) التربية (طرق ومناهج التدريس) ( دبلوم عالي + ماجستير + دكتوراه) <br>
+19) اللغة العربية للنطاقين بغيرها ( دبلوم عالي + ماجستير + دكتوراه) <br>
+20) علوم حاسوب ( دبلوم عالي + ماجستير + دكتوراه) <br>
+21) تقنية معلومات ( دبلوم عالي + ماجستير + دكتوراه) <br>
+22) هندسة البرمجيات ( دبلوم عالي + ماجستير + دكتوراه) <br>
+23) السياحة والإرشاد الأثري ( دبلوم عالي + ماجستير + دكتوراه) <br>
+24) التراث الشعبي السوداني ـ الفلكلورـ ( دبلوم عالي + ماجستير + دكتوراه) <br>
+25) الأثار الإسلامية ( دبلوم عالي + ماجستير + دكتوراه) <br>
+26) الإعلام ( ماجستير + دكتوراه ) <br>
+27) علم النفس ( ماجستير + دكتوراه ) <br>
+28) الاقتصاد ( ماجستير + دكتوراه ) <br>
+29) الترجمة ( ماجستير + دكتوراه ) <br>
+30) الدراسات السودانية المصرية القديمة ( ماجستير + دكتوراه ) <br>
+31) إدارة الأعمال الاحترافي MBA ( ماجستير ) <br><br>
+على الراغبين في الدراسة بالجامعة والحصول على التخفيض المذكور التسجيل على الرابط التالي:  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeT3X-MN6YTKTJS7US0c-uUM__B10ZqlZpQONhrChNakTnVCQ/viewform?vc=0&c=0&w=1">اضغط هنا</a> 
+</div>
+<footer style="top: 80px">
+        <img src="images/YDT-image.png" />
+        <ul>
+          <li class="contact">
+            <h2><b>تواصل معنا</b></h2>
+            <ul>
+              <li>
+                <span class="glyphicon glyphicon-map-marker"></span> إسطنبول- تركيا
+              </li>
+              <li>
+                <span class="glyphicon glyphicon-earphone"></span> 905369922950+
+              </li>
+              <li>
+                <span class="glyphicon glyphicon-envelope"></span>
+                amr.nawaf128@gmail.com
+              </li>
+            </ul>
+          </li>
+          <li class="social">
+            <h2><b>تابعنا</b></h2>
+            <ul>
+              <li>
+                <a
+                  href="https://www.facebook.com/yemenddd"
+                  class="bi bi-facebook"
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/yemenddd" class="bi bi-twitter"></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/yemen.ddd/"
+                  class="bi bi-instagram"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UCwnyiuNKFCSQpvk50-m1sWg"
+                  class="bi bi-youtube"
+                ></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+    </footer>
+</body>
+</html>
