@@ -15,7 +15,6 @@
 
 .num-wrap{
     margin-top: 10px;
-    direction: rtl;
     height: 100%;
     background-color: #0070A8;
     border-top: 5px solid rgb(41, 41, 41);
@@ -23,13 +22,15 @@
 }
 
 .nums{
-    text-align: center;
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin-right: -6%;
 }
 
 
-.num_container{
+.num_container{   
     color: white;
     font-size: 20px;
     margin-right: calc(100%/15);
@@ -73,21 +74,10 @@
         width:100%;
     }
 
-    .num-wrap{
-        width: 100%;
-        
-    }
-
-
-    .nums{
-        text-align: center;
-    }
-
 
     .num_container{
-        
         color: white;
-        font-size: 20px;
+        font-size: 16px;
         margin-right: calc(100%/8);
         margin-top: 35px;
     }

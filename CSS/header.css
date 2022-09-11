@@ -6,8 +6,9 @@ html{
 body{
     margin: 0;
     padding: 0;
-    background-color: #fafafa!important;
     width: 100%;
+    height: 100%;
+    background-color: #fafafa!important;
     overflow-x: hidden;
 }
 
@@ -125,10 +126,10 @@ ul.menu li:hover > a{
     html,body{
         height: 100%;
         padding: 0;
-        margin: 0;
+        margin: 0;  
         width: 100%;
         overflow-x: hidden;
-    }
+      }
 
     header{
         direction: ltr;
