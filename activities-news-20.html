@@ -37,164 +37,164 @@
         <title> جمعية الصداقة والتعاون اليمنية تزور جمعية İnsani İnşa Derneği – -إسطنبول. | جمعية الصداقة والتعاون اليمنية</title>
 </head>
 <body>
-<header>
-        <img
-          class="YDT"
-          width="200px"
-          height="90px"
-          src="images/YDT-image.png"
-          alt="yemendd image"
-        />
-        <nav>
-          <img class="icon" onclick="toggleMenu()" src="images/nav icon.png" />
-          <ul class="navigation" id="navigation">
-            <li><a href="index.html">الرئيسية</a></li>
-            <li><a href="about.html">من نحن</a></li>
-            <li><a href="activities-news.html">الأخبار ولأنشطة</a></li>
-            <div onmouseleave="fadeOut()" onmouseenter="fadeIn()">
-              <li id="dropdown1" onclick="subToggleMenu()">
-                <a class="dropdown">مجالات العمل <span>&#812;</span></a>
-                <ul class="menu" id="menu1">
-                  <li><a href="work-field-1.html">الأوقاف والإستثمار</a></li>
-                  <li><a href="work-field-2.html">الدراسات والبحوث</a></li>
-                  <li><a href="work-field-3.html">التدريب وبناء القدرات</a></li>
-                  <li><a href="work-fields-4.html">التعليم</a></li>
-                  <li><a href="work-field-5.html">التمكين الإقتصادي</a></li>
-                  <li><a href="work-field-6.html">المبادرات المجتمعية</a></li>
-                </ul>
-              </li>
-            </div>
-  
-            <li><a href="project-reports.html">تقارير المشاريع</a></li>
-            <li
-              id="dropdown2"
-              onclick="subToggleMenu2()"
-              onmouseleave="fadeOut2()"
-              onmouseenter="fadeIn2()"
-            >
-              <a class="dropdown">المركز الإعلامي <span>&#812;</span></a>
-              <ul class="menu" id="menu2">
-                <li><a href="studio-photos.html">معرض الصور</a></li>
-                <li><a href="studio-videos.html">الفيديوهات</a></li>
-                <li><a href="annual-reports.html">التقارير السنوية</a></li>
-              </ul>
-            </li>
-            <li><a href="donations.html">تبرع</a></li>
-            <li><a href="contact.htmls">تواصل معنا</a></li>
+  <header>
+    <img
+      class="YDT"
+      width="200px"
+      height="90px"
+      src="images/YDT-image.png"
+      alt="yemendd image"
+    />
+    <nav>
+      <img class="icon" onclick="toggleMenu()" src="images/nav icon.png" />
+      <ul class="navigation" id="navigation">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="activities-news.html">الأخبار ولأنشطة</a></li>
+        <div onmouseleave="fadeOut()" onmouseenter="fadeIn()">
+          <li id="dropdown1" onclick="subToggleMenu()">
+            <a class="dropdown">مجالات العمل <span>&#812;</span></a>
+            <ul class="menu" id="menu1">
+              <li><a href="work-field-1.html">الأوقاف والإستثمار</a></li>
+              <li><a href="work-field-2.html">الدراسات والبحوث</a></li>
+              <li><a href="work-field-3.html">التدريب وبناء القدرات</a></li>
+              <li><a href="work-fields-4.html">التعليم</a></li>
+              <li><a href="work-field-5.html">التمكين الإقتصادي</a></li>
+              <li><a href="work-field-6.html">المبادرات المجتمعية</a></li>
+            </ul>
+          </li>
+        </div>
+
+        <li><a href="project-reports.html">تقارير المشاريع</a></li>
+        <li
+          id="dropdown2"
+          onclick="subToggleMenu2()"
+          onmouseleave="fadeOut2()"
+          onmouseenter="fadeIn2()"
+        >
+          <a class="dropdown">المركز الإعلامي <span>&#812;</span></a>
+          <ul class="menu" id="menu2">
+            <li><a href="studio-photos.html">معرض الصور</a></li>
+            <li><a href="studio-videos.html">الفيديوهات</a></li>
+            <li><a href="annual-reports.html">التقارير السنوية</a></li>
           </ul>
-        </nav>
-        <script>
-          var menulist = document.getElementById("navigation");
-          var subMenulist = document.getElementById("menu1");
-          var subMenulist2 = document.getElementById("menu2");
-  
+        </li>
+        <li><a href="donations.html">تبرع</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+      </ul>
+    </nav>
+    <script>
+      var menulist = document.getElementById("navigation");
+      var subMenulist = document.getElementById("menu1");
+      var subMenulist2 = document.getElementById("menu2");
+
+      menulist.style.height = "0px";
+      subMenulist.style.height = "0px";
+      subMenulist2.style.height = "0px";
+
+      function toggleMenu() {
+        if (menulist.style.height == "0px") {
+          menulist.style.height = "307px";
+        } else {
           menulist.style.height = "0px";
+          subMenulist.style.display = "none";
           subMenulist.style.height = "0px";
+          subMenulist2.style.display = "none";
           subMenulist2.style.height = "0px";
-  
-          function toggleMenu() {
-            if (menulist.style.height == "0px") {
-              menulist.style.height = "307px";
-            } else {
-              menulist.style.height = "0px";
-              subMenulist.style.display = "none";
-              subMenulist.style.height = "0px";
-              subMenulist2.style.display = "none";
-              subMenulist2.style.height = "0px";
-            }
-          }
-  
-          function subToggleMenu() {
-            if (
-              subMenulist.style.height == "0px" &&
-              menulist.style.height == "307px"
-            ) {
-              subMenulist.style.display = "block";
-              subMenulist.style.height = "210px";
-              menulist.style.height = "524px";
-            } else if (
-              subMenulist.style.height == "0px" &&
-              menulist.style.height == "414px"
-            ) {
-              subMenulist.style.display = "block";
-              subMenulist.style.height = "210px";
-              menulist.style.height = "631px";
-            } else if (
-              (subMenulist.style.height =
-                "100px" && menulist.style.height == "524px")
-            ) {
-              subMenulist.style.height = "0px";
-              menulist.style.height = "307px";
-              subMenulist.style.display = "none";
-            } else if (
-              (subMenulist.style.height =
-                "100px" && menulist.style.height == "631px")
-            ) {
-              subMenulist.style.height = "0px";
-              menulist.style.height = "414px";
-              subMenulist.style.display = "none";
-            }
-          }
-  
-          function subToggleMenu2() {
-            if (
-              subMenulist2.style.height == "0px" &&
-              menulist.style.height == "307px"
-            ) {
-              subMenulist2.style.display = "block";
-              subMenulist2.style.height = "100px";
-              menulist.style.height = "414px";
-            } else if (
-              subMenulist2.style.height == "0px" &&
-              menulist.style.height == "524px"
-            ) {
-              subMenulist2.style.display = "block";
-              subMenulist2.style.height = "100px";
-              menulist.style.height = "631px";
-            } else if (
-              subMenulist2.style.height == "100px" &&
-              menulist.style.height == "631px"
-            ) {
-              menulist.style.height = "524px";
-              subMenulist2.style.height = "0px";
-              subMenulist2.style.display = "none";
-            } else if (
-              subMenulist2.style.height == "100px" &&
-              menulist.style.height == "524px"
-            ) {
-              menulist.style.height = "307px";
-              subMenulist2.style.height = "0px";
-              subMenulist2.style.display = "none";
-            }
-          }
-  
-          var menu1 = document.getElementById("menu1");
+        }
+      }
+
+      function subToggleMenu() {
+        if (
+          subMenulist.style.height == "0px" &&
+          menulist.style.height == "307px"
+        ) {
+          subMenulist.style.display = "block";
+          subMenulist.style.height = "210px";
+          menulist.style.height = "524px";
+        } else if (
+          subMenulist.style.height == "0px" &&
+          menulist.style.height == "414px"
+        ) {
+          subMenulist.style.display = "block";
+          subMenulist.style.height = "210px";
+          menulist.style.height = "631px";
+        } else if (
+          (subMenulist.style.height =
+            "100px" && menulist.style.height == "524px")
+        ) {
+          subMenulist.style.height = "0px";
+          menulist.style.height = "307px";
+          subMenulist.style.display = "none";
+        } else if (
+          (subMenulist.style.height =
+            "100px" && menulist.style.height == "631px")
+        ) {
+          subMenulist.style.height = "0px";
+          menulist.style.height = "414px";
+          subMenulist.style.display = "none";
+        }
+      }
+
+      function subToggleMenu2() {
+        if (
+          subMenulist2.style.height == "0px" &&
+          menulist.style.height == "307px"
+        ) {
+          subMenulist2.style.display = "block";
+          subMenulist2.style.height = "100px";
+          menulist.style.height = "414px";
+        } else if (
+          subMenulist2.style.height == "0px" &&
+          menulist.style.height == "524px"
+        ) {
+          subMenulist2.style.display = "block";
+          subMenulist2.style.height = "100px";
+          menulist.style.height = "631px";
+        } else if (
+          subMenulist2.style.height == "100px" &&
+          menulist.style.height == "631px"
+        ) {
+          menulist.style.height = "524px";
+          subMenulist2.style.height = "0px";
+          subMenulist2.style.display = "none";
+        } else if (
+          subMenulist2.style.height == "100px" &&
+          menulist.style.height == "524px"
+        ) {
+          menulist.style.height = "307px";
+          subMenulist2.style.height = "0px";
+          subMenulist2.style.display = "none";
+        }
+      }
+
+      var menu1 = document.getElementById("menu1");
+      menu1.style.opacity = "0";
+      var menu2 = document.getElementById("menu2");
+      menu2.style.opacity = "0";
+
+      function fadeIn() {
+        if (menu1.style.opacity == "0" && window.innerWidth > 700) {
+          menu1.style.opacity = "1";
+        }
+      }
+      function fadeOut() {
+        if (menu1.style.opacity == "1" && window.innerWidth > 700) {
           menu1.style.opacity = "0";
-          var menu2 = document.getElementById("menu2");
+        }
+      }
+      function fadeIn2() {
+        if (menu2.style.opacity == "0" && window.innerWidth > 700) {
+          menu2.style.opacity = "1";
+        }
+      }
+      function fadeOut2() {
+        if (menu2.style.opacity == "1" && window.innerWidth > 700) {
           menu2.style.opacity = "0";
-  
-          function fadeIn() {
-            if (menu1.style.opacity == "0" && window.innerWidth > 700) {
-              menu1.style.opacity = "1";
-            }
-          }
-          function fadeOut() {
-            if (menu1.style.opacity == "1" && window.innerWidth > 700) {
-              menu1.style.opacity = "0";
-            }
-          }
-          function fadeIn2() {
-            if (menu2.style.opacity == "0" && window.innerWidth > 700) {
-              menu2.style.opacity = "1";
-            }
-          }
-          function fadeOut2() {
-            if (menu2.style.opacity == "1" && window.innerWidth > 700) {
-              menu2.style.opacity = "0";
-            }
-          }
-        </script>
-    </header>
+        }
+      }
+    </script>
+</header>
 <h1 class="activities-news-title">جمعية الصداقة والتعاون اليمنية تزور جمعية İnsani İnşa Derneği – -إسطنبول.</h1>
 <div >
             <img  width="60%" class="activities-news-image"  src="images/activities-news-image-8.jpg" alt="">
