@@ -74,6 +74,9 @@
         width:100%;
     }
 
+    .nums{
+        margin-right: -15%;
+    }
 
     .num_container{
         color: white;
