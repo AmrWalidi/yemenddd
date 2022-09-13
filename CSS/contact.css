@@ -175,6 +175,7 @@ textarea:focus{
 
     .contact-section{
         top: 10px;
+        padding-bottom: 180px;
     }
     .contact-form{
         position: relative;
