@@ -174,11 +174,7 @@ textarea:focus{
     
 
     .contact-section{
-        position: relative;
-        top: 20px;
-        padding: 70px 0 150px;
-        width: 100%;
-        height: fit-content;
+        top: 10px;
     }
     .contact-form{
         position: relative;
@@ -194,5 +190,13 @@ textarea:focus{
     .social{
         position: relative;
         top: 700px;
+    }
+    .social h1{
+        text-align: center;
+    }
+
+    .social ul{
+        justify-content: center;
+        margin-left: 50px;
     }
 }
