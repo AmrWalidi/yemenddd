@@ -60,7 +60,7 @@
     .achievements{
         position: relative;
         top: 0;
-        
+        overflow-x:visible;
     }
     
     .achievements h2{
