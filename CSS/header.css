@@ -128,6 +128,7 @@ ul.menu li:hover > a{
         padding: 0;
         margin: 0;  
         width: 100%;
+        overflow-x: hidden;
       }
 
     header{
