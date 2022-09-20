@@ -133,6 +133,7 @@ ul.menu li:hover > a{
 
     header{
         direction: ltr;
+        z-index: 100;
     }
 
     .YDT{
@@ -172,8 +173,7 @@ ul.menu li:hover > a{
         direction: rtl;
         background: linear-gradient(to right,#038fd6,#0070A8 );
         float: right;
-        position: absolute;
-        top:100px;
+        position: relative;
         z-index: 100;
         height:0;
     }
